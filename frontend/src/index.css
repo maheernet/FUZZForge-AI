@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --background: 226 54% 5%; /* #060914 */
+    --foreground: 210 40% 98%; /* #F8FAFC */
+
+    --card: 223 48% 10%; /* #0D1426 */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 223 48% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 188 86% 53%; /* #22D3EE */
+    --primary-foreground: 226 54% 5%;
+
+    --secondary: 223 52% 8%; /* #0A1020 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 47% 13%; /* #111A30 */
+    --muted-foreground: 215 28% 65%; /* #94A3B8 */
+
+    --accent: 222 47% 13%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 350 89% 60%; /* #F43F5E */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 13%; /* #111A30 */
+    --input: 222 47% 13%;
+    --ring: 188 86% 53%;
+
+    --radius: 0.75rem; /* 12px */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Very subtle grid pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Replaced aggressive glow with subtle styling */
+.glass {
+  background: rgba(13, 20, 38, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.subtle-border {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.elevated-card {
+  background: #111A30;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+/* Remove default link underlines everywhere */
+a {
+  text-decoration: none !important;
+}
