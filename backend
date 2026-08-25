@@ -1,0 +1,24 @@
+FUZZForge-AI/
+└── backend/
+    ├── app/
+    │   ├── __init__.py
+    │   ├── main.py
+    │   ├── config.py
+    │   ├── api/
+    │   │   ├── __init__.py
+    │   │   ├── schemas.py
+    │   │   └── routes.py
+    │   └── core/
+    │       ├── __init__.py
+    │       ├── ast_parser.py
+    │       ├── synthesizer.py
+    │       └── fuzz_runner.py
+    ├── storage/
+    │   └── .gitkeep
+    ├── tests/
+    │   ├── __init__.py
+    │   └── test_api.py
+    ├── .gitignore
+    ├── requirements.txt
+    ├── Dockerfile
+    └── README.md
