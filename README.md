@@ -2,6 +2,8 @@
 
 FuzzForge AI is an intelligent, premium cybersecurity platform designed to automate and enhance C/C++ security testing. It bridges the gap between unfamiliar codebases and advanced vulnerability discovery by automatically analyzing API structures, generating fuzzing harnesses, and managing high-performance fuzzing campaigns.
 
+
+ video demo link : https://youtu.be/fJdAdY1pI-A?si=TwuVxjt7c-83_wIT
 > **“From unfamiliar code to automated security testing.”**
 
 ## 🚀 Features
